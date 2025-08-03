@@ -7,7 +7,6 @@ import { AnimatePresence, motion } from "framer-motion"
 import type { ComponentProps } from "react"
 import { useMemo } from "react"
 import useSWR from "swr"
-import type { Song } from "src/app/api/lastfm/latest/get-latest-songs"
 import { revalidate } from "src/app/api/lastfm/latest/route"
 import { Skeleton } from "src/components/Skeleton"
 import { capitalize } from "src/utils/capitalize"
@@ -18,6 +17,15 @@ interface LatestSongsProps extends ComponentProps<"div"> {
    * The maximum number of songs to display.
    */
   limit?: number
+}
+
+interface Song {
+  artist: string
+  cover: string
+  date: number
+  title: string
+  playing: boolean
+  url: string
 }
 
 interface LatestSongProps extends ComponentProps<"a"> {

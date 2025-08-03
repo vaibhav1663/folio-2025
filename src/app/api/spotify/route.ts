@@ -53,6 +53,11 @@ export async function GET(request: NextRequest) {
     ? Number(searchParams.get("limit"))
     : 10; // Default to 10 if no limit is provided
 
+  // Validate required environment variables
+  if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN) {
+    return new Response("Missing required Spotify credentials", { status: 500 });
+  }
+
   try {
     // Step 1: Get a new access token using the refresh token
     const tokenResponse = await fetch('https://accounts.spotify.com/api/token', {
