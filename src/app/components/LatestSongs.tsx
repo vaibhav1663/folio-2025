@@ -7,10 +7,10 @@ import { AnimatePresence, motion } from "framer-motion"
 import type { ComponentProps } from "react"
 import { useMemo } from "react"
 import useSWR from "swr"
-import { revalidate } from "src/app/api/lastfm/latest/route"
 import { Skeleton } from "src/components/Skeleton"
 import { capitalize } from "src/utils/capitalize"
 import { json } from "src/utils/json"
+import { revalidate } from "../api/spotify/route"
 
 interface LatestSongsProps extends ComponentProps<"div"> {
   /**
