@@ -31,7 +31,6 @@ export function Introduction({
               width="80"
             />
           </div>
-          <TofuPolaroid className="bottom-[-4.35rem] right-[-3.65rem] w-[8.5rem]" />
         </div>
         <h1 className="mb-2.5 mt-5 text-2xl font-semibold text-gray-800 dark:text-white">
           Vaibhav Khating
