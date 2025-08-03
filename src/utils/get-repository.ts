@@ -90,7 +90,7 @@ export async function getRepository(
       }
     ).then((response) => {
       if (!response.ok) {
-        console.error(response)
+        throw new Error("Error while fetching the repository" + response.statusText)
       }
 
       return response.json()

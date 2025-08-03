@@ -2,11 +2,11 @@ import { formatDistanceToNowStrict, isYesterday } from "date-fns"
 import { toHtml } from "hast-util-to-html"
 import { s } from "hastscript"
 import type { NextRequest } from "next/server"
-import { getLatestSongs } from "../../lastfm/latest/get-latest-songs"
 import theme from "src/theme.json"
 import { capitalize } from "src/utils/capitalize"
 import { encodeImage } from "src/utils/encode-image"
 import { truncate } from "src/utils/truncate"
+import { getLatestSongs } from "../../lastfm/latest/get-latest-songs"
 
 const WIDTH = 380
 const HEIGHT = 80
