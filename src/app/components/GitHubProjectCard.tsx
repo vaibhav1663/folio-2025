@@ -1,4 +1,3 @@
-"use client"
 import type { ComponentProps } from "react"
 import { Suspense } from "react"
 import { ProjectCard } from "./ProjectCard"

@@ -1,4 +1,3 @@
-"use client"
 const GITHUB_API = "https://api.github.com"
 
 interface GitHubResponse {
@@ -85,7 +84,12 @@ export async function getRepository(
 ): Promise<Repository | undefined> {
   try {
     const response: GitHubResponse = await fetch(
-      `${GITHUB_API}/repos/${repository}`
+      `${GITHUB_API}/repos/${repository}`,
+      {
+        headers: {
+          "Authorization": `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`
+        }
+      }
     ).then((response) => {
       if (!response.ok) {
         throw new Error(`There was an error while fetching "${repository}".`)
