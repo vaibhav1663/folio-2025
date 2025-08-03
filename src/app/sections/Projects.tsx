@@ -55,12 +55,12 @@ export function Projects(props: ComponentProps<"section">) {
             Web based screen recorder
           </p>
         </GitHubProjectCard>
-        <GitHubProjectCard repository="serafimcloud/21st">
+        <GitHubProjectCard repository="vaibhav1663/certfast">
           <h3 className="mb-2 font-semibold text-amber-500 dark:text-amber-400">
-            Sketch Maps
+            CertFast
           </h3>
           <p className="leading-relaxed text-gray-500 dark:text-gray-350">
-            A Sketch plugin to fill layers with&nbsp;maps.
+            A web-based bulk certificate generator.
           </p>
         </GitHubProjectCard>
       </div>
