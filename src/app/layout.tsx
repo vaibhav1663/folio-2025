@@ -13,10 +13,10 @@ const inter = Inter({
 
 const info = {
   name: "Vaibhav Khating",
-  twitter: "@marcbouchenoire",
+  twitter: "@VaibhavKhating",
   description:
     "A detail-obsessed Design Engineer, designing and building delightful products.",
-  url: "https://marcbouchenoire.com",
+  url: "https://vaibhavkhating.vercel.app",
   image: "/meta.png"
 }
 

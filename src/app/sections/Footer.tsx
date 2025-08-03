@@ -42,11 +42,11 @@ export async function Footer({
           </time>
           <span className="text-gray-300 dark:text-gray-600">—</span> he
           <span className="text-gray-300 dark:text-gray-600">/</span>
-          they
+          him
         </span>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/marcbouchenoire/marcbouchenoire.com"
+          href="https://github.com/vaibhav1663/folio-2025"
           rel="noreferrer"
           target="_blank"
         >
@@ -65,7 +65,7 @@ export async function Footer({
             />
           </svg>
           <span>
-            <span>vaibhav1663/folio2025</span>
+            <span>vaibhav1663/folio-2025</span>
             <span className="hidden text-gray-350 dark:text-gray-450 sm:inline">
               #{commit}
             </span>

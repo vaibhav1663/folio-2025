@@ -237,8 +237,14 @@ export function LatestSongs({
       {songs
         ? songs.map((song, index) => <LatestSong key={index} song={song} />)
         : Array.from({ length: limit }, (_, index) => (
-            <LatestSong key={index} />
-          ))}
+          <LatestSong key={index} />
+        ))}
+      <span className="text-gray-500 dark:text-gray-400 inline-flex items-center">
+        from
+        <a href="https://open.spotify.com/user/317c7ynvxys2vzelgehfmch4u3f4" target="_blank" rel="noreferrer">
+          <img src="./activity/spotify-logo.png" alt="Spotify" className="inline-block h-4 w-auto ml-2 align-middle" />
+        </a>
+      </span>
     </div>
   )
 }

@@ -33,7 +33,7 @@ export function Projects(props: ComponentProps<"section">) {
       <div className="content content-lg mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-8">
         <GitHubProjectCard repository="vaibhav1663/promt3d">
           <h3 className="mb-2 font-semibold text-gray-800 dark:text-white">
-            Promt3d
+            Prompt3d
           </h3>
           <p className="leading-relaxed text-gray-500 dark:text-gray-350">
             A ThreeJS-powered virtual human being that uses a set of neat Azure APIs to do some talking!
@@ -44,7 +44,7 @@ export function Projects(props: ComponentProps<"section">) {
             Talking avatar backend
           </h3>
           <p className="leading-relaxed text-gray-500 dark:text-gray-350">
-            A Sketch plugin to extract a color palette from&nbsp;images.
+            Backend for the{" "} prompt3d project.
           </p>
         </GitHubProjectCard>
         <GitHubProjectCard repository="vaibhav1663/capto">

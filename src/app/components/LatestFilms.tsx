@@ -234,6 +234,13 @@ export function LatestFilms({
         : Array.from({ length: limit }, (_, index) => (
           <LatestFilm key={index} />
         ))}
+
+      <span className="text-gray-500 dark:text-gray-400">
+        from
+        <a href="https://letterboxd.com/vaibhavkhating/" target="_blank" rel="noreferrer">
+          <img src="./activity/letterboxd-logo.png" alt="Letterboxd" className="inline-block h-3 w-auto ml-2 relative align-middle -top-0.5" />
+        </a>
+      </span>
     </div>
   )
 }

@@ -3,14 +3,6 @@ import { Code as Bright } from "bright"
 import { clsx } from "clsx"
 import Image from "next/image"
 import type { ComponentProps, ReactNode } from "react"
-import elementsFood from "public/visuals/elements/food.png"
-import elementsMusic from "public/visuals/elements/music.png"
-import framerMotion from "public/visuals/framer-motion/static.png"
-import liveblocksEmojiPicker from "public/visuals/liveblocks/emoji-picker.png"
-import liveblocksInbox from "public/visuals/liveblocks/inbox.png"
-import liveblocksMentionSuggestions from "public/visuals/liveblocks/mention-suggestions.png"
-import liveblocksThread from "public/visuals/liveblocks/thread.png"
-import masterThesis from "public/visuals/master/thesis.png"
 import { withExternalCdn } from "src/utils/with-external-cdn"
 
 interface BrowserProps extends Omit<ComponentProps<"div">, "title"> {
@@ -249,27 +241,6 @@ function Book({ children, className, ...props }: ComponentProps<"div">) {
   )
 }
 
-const liveblocksPrimitivesCode = `
-import {
-  Composer,
-  Comment,
-} from "@liveblocks/react-comments/primitives"
-
-function CustomComposer(props) {
-  return (
-    <Composer.Form {...props}>
-      <Composer.Editor
-        components={{
-          Mention,
-          MentionSuggestions,
-          Link,
-        }}
-      />
-      <Composer.Submit>Create thread</Composer.Submit>
-    </Composer.Form>
-  );
-}`.trim()
-
 /**
  * A section displaying a selection of projects.
  *
@@ -426,7 +397,7 @@ export function Work(props: ComponentProps<"section">) {
               I also worked with{" "}
               <a
                 className="focusable rounded-sm font-medium underline decoration-gray-100/30 decoration-2 underline-offset-2 transition duration-100 hover:decoration-gray-100/50 focus:ring-gray-100/30 dark:decoration-gray-900/20 dark:hover:decoration-gray-900/40 dark:focus:ring-gray-900/20"
-                href="https://bluegulfboats.com"
+                href="https://group.bluegulfcat.ae/bluecat.html"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -455,16 +426,10 @@ export function Work(props: ComponentProps<"section">) {
 
           </div>
           <div className="relative flex flex-1 items-center justify-center pb-4 sm:pb-0 sm:basis-1/2">
-            <video
-              autoPlay
+            <img
               className="h-full w-full border border-gray-800/10 rounded-lg object-cover"
-              loop
-              muted
-              playsInline
-              poster="/visuals/liveblocks.io/marketing.jpg"
-              preload="metadata"
               src={withExternalCdn(
-                "/visuals/liveblocks.io/marketing.mp4"
+                "/visuals/bluegulfcat/preview.jpeg"
               )}
             />
           </div>
