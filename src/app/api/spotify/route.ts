@@ -1,9 +1,9 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-const CLIENT_ID = 'c011bb532025435093f0ae27f862d9ca';
-const CLIENT_SECRET = '254dbe742d054009bba0a6279f501a6f';
-const REFRESH_TOKEN = 'AQBjAvUt4d-SkdzRzP7crVPGAgmWGK2S1Arc6qbYlhuD3MIkgon8kxhDBcLJ8llqXHornz-tVTYC6QgXnufF6wVHjkIO3EVU8tXSMLGa5nMPQcjjlohRrNJkOK6rzXuYapw';
+const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
+const REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
 
 interface TokenResponse {
   access_token: string;

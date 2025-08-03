@@ -1,18 +1,14 @@
 {
-  "name": "marcbouchenoire.com",
+  "name": "vaibhavkhatingfolio-2025",
   "description": "My personal website and portfolio.",
   "author": "Vaibhav Khating <vaibhavkhating@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "prettier": "prettier --write --log-level silent --ignore-path .eslintignore",
-    "lint": "npm run lint:eslint && npm run lint:stylelint && npm run lint:tsc && npm run lint:prettier",
-    "lint:eslint": "eslint '**/*.{cjs,mjs,ts,tsx}' --fix",
     "lint:prettier": "npm run prettier '**/*.{cjs,mjs,ts,tsx,json,md,yml,css}'",
     "lint:stylelint": "stylelint '**/*.css' --fix",
     "lint:tsc": "tsc --project tsconfig.json",
-    "postinstall": "npm src/scripts/postinstall.ts"
   },
   "dependencies": {
     "bright": "^0.8.5",
@@ -31,9 +27,6 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
-    "@marcbouchenoire/eslint-config": "^3.0.1",
-    "@marcbouchenoire/prettier-config": "^1.1.0",
-    "@marcbouchenoire/stylelint-config": "^2.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.69",
