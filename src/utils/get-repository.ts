@@ -87,7 +87,7 @@ export async function getRepository(
       `${GITHUB_API}/repos/${repository}`,
       {
         headers: {
-          "Authorization": `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`
+          Authorization: `Token ${process.env.GITHUB_ACCESS_TOKEN}`
         }
       }
     ).then((response) => {
